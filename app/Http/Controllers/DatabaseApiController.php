@@ -77,7 +77,7 @@ class DatabaseApiController extends BaseController
             return redirect(route('index'));
         }
         $comments = Comment::where('anime_id',$id)->orderBy('created_at','desc')->take(15)->get();
-        $count = Comment::where('anime_id',$id)->count();
+        $count = count($comments);
         $finalResult["items"] = $count;
         foreach($comments as $comment){
             $user = $comment->user;
