@@ -1,0 +1,114 @@
+@import url(colors.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--second-color);
+}
+
+.container {
+  max-width: 450px;
+  width: 100%;
+  border-radius: 10px;
+  border: 3px solid var(--fourth-color);
+  background-color: var(--first-color);
+}
+
+@media (max-width: 470px) {
+  .container {
+    max-width: 95vw;
+  }
+}
+
+.form-wrapper {
+  padding: 30px;
+}
+
+.title {
+  color: var(--fourth-color);
+  text-align: center;
+  font-size: 50px;
+  letter-spacing: 3px;
+  font-weight: 900;
+}
+
+.row {
+  margin-top: 30px;
+  height: 45px;
+  width: 100%;
+}
+
+.row input {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 16px;
+  letter-spacing: 1px;
+  height: 90%;
+  width: 100%;
+  outline: none;
+  border: 0px;
+  background-color: var(--first-color);
+  border-bottom: 2px solid black;
+  padding-left: 5px;
+}
+
+.row input:focus{
+  font-weight: 500;
+  border-left: 2px solid var(--fifth-color);
+  border-top: 2px solid var(--fifth-color);
+  border-right: 2px solid var(--fifth-color);
+}
+
+.row span{
+  color: red;
+  font-weight: 900;
+  font-size: 14px;
+}
+
+.button {
+  margin-top: 35px;
+  text-align: center;
+}
+
+.button input {
+  color: white;
+  width: 80%;
+  font-size: 20px;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  font-weight: 900;
+  cursor: pointer;
+  padding-left: 0px;
+  background-color: var(--fourth-color);
+  border: 1px solid lightgray;
+  opacity: 0.8;
+}
+
+.button input:hover{
+  opacity: 1;
+}
+
+.signup-redirect {
+  font-weight: 300;
+  text-align: center;
+  margin-top: 10px;
+}
+
+a {
+  font-weight: 900;
+  color: var(--third-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
