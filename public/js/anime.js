@@ -25,7 +25,7 @@ function onCommentsJson(json){
       author.classList.add("author");
       author.textContent=comment.username;
       const date = document.createElement("span");
-      date.textContent=comment.created_at;
+      date.textContent=comment.created_at.substring(0,10);
       subdiv.appendChild(author);
       subdiv.appendChild(date);
       div.appendChild(subdiv);
